@@ -1,15 +1,18 @@
-package ClockHands;
+package BiteSizeChunks.ClockHands;
 
-public Class ClockhandsDemo() {
+import java.time.*;
 
-  public static main(){
-    Calendar time = "10:22";
-    Float hourHand;
-    Float minuteHand;
+public class ClockhandsDemo {
     
-    hourHand = ClockHands.HourHandAngle(time);
-    minuteHand = Clockahnds.MinuteHandAngle(time);
+  public static void main(){    
+    Double hourHand;
+    Double minuteHand;    
     
+    LocalTime time = LocalTime.parse("10:15:30");
+    
+    //hourHand = ClockHands.HourHandAngle(time);
+    minuteHand = ClockHands.MinuteHandAngle(time);
+    
+    System.out.println(minuteHand);
   }
-
 }
